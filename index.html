@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>NJT Rewards</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0px;
+        padding: 0px;
+        background: #eff1f6;
+      }
+      .bg-handle {
+        width: 100%;
+        float: left;
+        background: #fff;
+      }
+      .new-approve-wrap {
+        width: 100%;
+        float: left;
+      }
+      .app-container {
+        width: 600px;
+        max-width: 90%;
+        margin: 0px auto;
+      }
+      .approve-section-one {
+        width: 100%;
+        float: left;
+        background: #eff1f6;
+      }
+      .approve-logo {
+        width: 100%;
+        float: left;
+        text-align: center;
+      }
+      .approve-logo img {
+        height: 140px;
+      }
+      .email-header {
+        width: 100%;
+        float: left;
+        background: #004f99;
+      }
+      .email-iiner-header {
+        padding: 18px 22px;
+        display: flex;
+      }
+      .img-box {
+        width: 27px;
+        float: left;
+        height: 27px;
+      }
+      h5.apprve-heading {
+        width: 86%;
+        float: left;
+        color: #fff;
+        margin: 0px 0px 0px 0px;
+        font-size: 20px;
+        padding: 0px;
+      }
+      .img-box img {
+        width: 100%;
+      }
+      .inner-container {
+        width: 93%;
+        margin: 0px auto;
+      }
+      .email-description-box {
+        width: 100%;
+        float: left;
+      }
+      h2.email-heading-des {
+        margin-top: 18px;
+        margin-bottom: 12px;
+        font-size: 18px;
+        color: #454545;
+      }
+      .email-description-main {
+        width: 100%;
+        float: left;
+        color: #454545;
+        font-size: 16px;
+        line-height: 24px;
+      }
+      .title {
+        width: 100%;
+        float: left;
+      }
+      .title > h1 {
+        font-size: 32px;
+        margin: 24px 0px 12px;
+        font-weight: bold;
+        margin-left: 20px;
+        color: #454545;
+      }
+      .card-design-box {
+        width: 100%;
+        float: left;
+        margin-top: 40px;
+      }
+      .card-container {
+        width: 460px;
+        max-width: 100%;
+        margin: 0px auto;
+      }
+      .card-wrap {
+        width: 100%;
+        float: left;
+        background: #eff1f6;
+        border: solid 1px #e6e6e6;
+        border-radius: 4px;
+      }
+      .card-preivew-box {
+        width: 350px;
+        max-width: 96%;
+        margin: 0px auto;
+      }
+      .card-box-main {
+        width: 100%;
+        float: left;
+      }
+      h3.card-heading {
+        width: 100%;
+        float: left;
+        text-align: center;
+        font-size: 18px;
+        color: #454545;
+        margin-top: 25px;
+        margin-bottom: 20px;
+      }
+      .card-box-prev {
+        width: 100%;
+        float: left;
+        background: #fff;
+        border: solid 1px #d6d6d6;
+        border-radius: 4px;
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+      }
+      .card-disc span {
+        padding: 6px 12px;
+        background: rgba(245, 132, 61, 0.12);
+        font-size: 13px;
+        color: #e8742d;
+        line-height: 39px;
+        font-family: 'inter-semibold';
+        border-radius: 30px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+      }
+      .card-inner-prev {
+        padding: 18px 14px;
+        float: left;
+      }
+      .card-header {
+        width: 100%;
+        float: left;
+      }
+      .card-left-side {
+        width: 50%;
+        float: left;
+      }
+      .card-disc {
+        width: 100%;
+        float: left;
+        text-align: left;
+      }
+      .card-right-side {
+        width: 50%;
+        float: left;
+        text-align: right;
+      }
+      .point-pts {
+        font-size: 16px;
+        color: #bc229f;
+        font-weight: bold;
+        float: right;
+        padding-top: 10px;
+      }
+      .point-pts img {
+        width: 18px;
+        height: 18px;
+      }
+      span.pts-txt {
+        float: right;
+        margin-left: 2px;
+        margin-top: -1px;
+      }
+      .new-preview-coup-image {
+        width: 100%;
+        float: left;
+        text-align: center;
+      }
+      .new-preview-img-center {
+        width: 100%;
+        float: left;
+        text-align: center;
+      }
+      .new-preview-img-center img {
+        max-height: 120px;
+      }
+      h5.card-heading-2 {
+        text-align: left;
+        font-size: 16px;
+        color: #1f1f1f;
+        margin: 0px;
+        width: 100%;
+        float: left;
+      }
+      .first-discribe {
+        width: 100%;
+        float: left;
+        text-align: left;
+        font-size: 14px;
+        color: #7b7b7b;
+        margin-top: 8px;
+        margin-bottom: 14px;
+      }
+      .purchase-text {
+        width: 100%;
+        float: left;
+        color: #575757;
+        font-weight: bold;
+        font-size: 16px;
+      }
+      .email-link-box {
+        width: 100%;
+        float: left;
+        padding-top: 10px;
+      }
+      .link-first {
+        width: 100%;
+        float: left;
+      }
+      .link-second img {
+        width: 18px;
+        height: 18px;
+        float: left;
+        margin-right: 6px;
+        margin-top: 2px;
+      }
+      span.link-txt-first {
+        font-size: 16px;
+        color: #4989fe;
+        font-weight: bold;
+      }
+      .link-first img {
+        width: 18px;
+        height: 18px;
+        float: left;
+        margin-right: 6px;
+        margin-top: 2px;
+      }
+      .link-first a {
+        text-decoration: none;
+      }
+      .link-second {
+        width: 100%;
+        float: left;
+        padding-top: 6px;
+      }
+      .link-second a {
+        text-decoration: none;
+      }
+      span.link-txt-second {
+        font-size: 16px;
+        color: #4989fe;
+        width: 87%;
+        float: left;
+      }
+      .email-btn-box {
+        width: 100%;
+        float: left;
+        margin-top: 40px;
+      }
+      .email-first-btn {
+        float: left;
+        width: 50%;
+        font-size: 16px;
+        color: rgba(190, 35, 161, 0.45);
+        padding-top: 10px;
+      }
+      .email-second-btn {
+        width: 50%;
+        float: right;
+        text-align: right;
+      }
+      span.select-btn {
+        font-size: 16px;
+        color: rgba(190, 35, 161, 0.45);
+        border: solid 1px rgba(190, 35, 161, 0.45);
+        padding: 8px 23px;
+        float: right;
+        border-radius: 30px;
+      }
+      .term-box {
+        width: 100%;
+        float: left;
+        margin-top: 16px;
+        background: #e1e8f2;
+        border-radius: 4px;
+      }
+      .expireation-date {
+        color: #43003e;
+        padding: 20px 12px;
+        font-size: 16px;
+      }
+      .terms-box-header {
+        color: #43003e;
+        padding: 20px 12px;
+        font-size: 16px;
+        background: #d0dceb;
+        font-weight: bold;
+      }
+      .terms-box-description {
+        color: #43003e;
+        padding: 20px 12px;
+        font-size: 16px;
+        line-height: 30px;
+      }
+      .generate-coupon-txt {
+        padding: 20px 0px;
+        width: 100%;
+        float: left;
+        font-size: 12px;
+        text-align: center;
+        font-style: italic;
+        color: #6e6e6e;
+      }
+      .regard-section {
+        float: left;
+        margin-top: 48px;
+        padding: 0px 22px;
+      }
+      .regard-txt {
+        width: 100%;
+        float: left;
+        font-size: 18px;
+        color: #383838;
+        font-weight: bold;
+        padding-bottom: 10px;
+      }
+      .regard-name {
+        width: 100%;
+        float: left;
+        font-size: 18px;
+        color: #383838;
+      }
+      .get-in-touch-box {
+        width: 100%;
+        float: left;
+        margin-top: 34px;
+      }
+      .get-box {
+        padding: 18px 22px;
+        float: left;
+      }
+      .get-heading {
+        width: 100%;
+        float: left;
+        text-align: left;
+        font-size: 20px;
+        color: #454545;
+        margin-bottom: 20px;
+      }
+      .box-get-in {
+        width: 100%;
+        float: left;
+      }
+      .email-box-footer {
+        width: 22%;
+        float: left;
+      }
+      .line-mid {
+        width: 10px;
+        float: left;
+      }
+      .email-box-footer a {
+        font-size: 16px;
+        color: #454545;
+        text-decoration: none;
+      }
+      .email-box-footer img {
+        float: left;
+        margin-top: 5px;
+        margin-right: 10px;
+      }
+      .email-box-footer img {
+        float: left;
+        margin-top: 4px;
+        margin-right: 6px;
+      }
+      .email-box-footer.secon img {
+        margin-top: 2px;
+      }
+      .footer-box-email {
+        float: left;
+        padding: 18px 22px;
+      }
+      .terms-cond-link {
+        width: 100%;
+        float: left;
+        margin-bottom: 8px;
+      }
+      .terms-cond-link a {
+        font-size: 16px;
+        text-decoration: none;
+        text-align: left;
+        color: #1489ff;
+      }
+      .copy-right {
+        width: 100%;
+        float: left;
+        font-size: 14px;
+        color: #676767;
+      }
+      h2.email-heading-des-tow {
+        margin: 0px;
+        font-weight: normal;
+      }
+      .email-heading-des-tow {
+        width: 100%;
+        float: left;
+        margin-bottom: 6px;
+        font-size: 16px;
+        color: #454545;
+      }
+      .email-feedback {
+        margin: 24px 0px 0px;
+        padding-left: 18px;
+        width: 100%;
+        float: left;
+      }
+      .list-order {
+        font-weight: bold;
+        font-size: 16px;
+        color: #454545;
+        line-height: 30px;
+      }
+      .list-order span {
+        font-weight: normal;
+      }
+      .border-line {
+        width: 100%;
+        float: left;
+        border-top: 1px solid #d6d6d6;
+      }
+      h2.email-heading-des-one {
+        font-size: 18px;
+        color: #454545;
+      }
+      .button {
+        width: 100%;
+        float: left;
+        margin-top: 45px !important;
+      }
+      .button a {
+        background: #1489ff;
+        margin-left: 20px;
+        text-decoration: none;
+        color: white;
+        border-radius: 4px;
+        padding: 12px 24px;
+      }
+      .button a:hover {
+        background: white;
+        color: #1489ff;
+        border: 1px solid #1489ff;
+      }
+      /* 599 */
+      @media (min-width: 320px) and (max-width: 480px) {
+        .email-box-footer {
+          width: 100%;
+          margin-bottom: 10px;
+        }
+        .line-mid {
+          display: none;
+        }
+        h5.apprve-heading {
+          font-size: 16px;
+        }
+        .title > h1 {
+          font-size: 18px;
+          margin-left: 10px;
+        }
+        .list-order {
+          font-size: 14px;
+        }
+        .border-line {
+          width: 99%;
+        }
+        .button a {
+          margin-left: 10px;
+        }
+      }
+      @media only screen and (max-width: 319px) {
+        .email-box-footer {
+          width: 100%;
+          margin-bottom: 10px;
+        }
+        .line-mid {
+          display: none;
+        }
+        h5.apprve-heading {
+          font-size: 14px;
+        }
+        .title > h1 {
+          font-size: 18px;
+          margin-left: 10px;
+        }
+        .list-order {
+          font-size: 12px;
+        }
+        .border-line {
+          width: 99%;
+        }
+        .button a {
+          margin-left: 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="new-approve-wrap">
+      <div class="app-container">
+        <div class="bg-handle">
+          <div class="approve-section-one">
+            <div class="approve-logo">
+              <img
+                src="https://njtbranding.s3.amazonaws.com/Logo-Teaser.png"
+                alt="image not found"
+              />
+            </div>
+          </div>
+          <div class="email-header">
+            <div class="email-iiner-header">
+              <h5 class="apprve-heading">Verify Your Account</h5>
+            </div>
+          </div>
+          <div class="inner-container">
+            <div class="email-description-box">
+              <h2 class="email-heading-des">Hi, !</h2>
+              <div class="email-description-main">
+                To start using NJT Rewards, we just need to confirm that we got
+                your email right.
+              </div>
+            </div>
+          </div>
+          <div class="button">
+            <a href="https://www.google.com.pk/">Confirm Email</a>
+          </div>
+          <div class="regard-section">
+            <div class="regard-txt">Regards,</div>
+            <div class="regard-name">The NJT Rewards team</div>
+          </div>
+          <div class="get-in-touch-box">
+            <div class="border-line"></div>
+            <div class="get-box">
+              <div class="get-heading">Get in Touch</div>
+              <div class="box-get-in">
+                <div class="email-box-footer">
+                  <a href="mailto:support@njtrewards.com">
+                    <img
+                      class="email-icon"
+                      src="https://njtbranding.s3.amazonaws.com/black-email-solid.png"
+                      alt="not found"
+                    />
+                  </a>
+                </div>
+                <div class="line-mid">
+                  <img
+                    src="https://njtbranding.s3.amazonaws.com/Line-1.png"
+                    alt="not found"
+                  />
+                </div>
+                <div class="email-box-footer secon">
+                  <a href="tel:090078601">
+                    <img
+                      src="https://njtbranding.s3.amazonaws.com/black-phone.png"
+                      alt="not found"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-box-email">
+            <div class="terms-cond-link">
+              <a href="https://www.google.com.pk">Terms and Conditions</a>
+            </div>
+            <div class="copy-right">
+              Copyrights © NJT Rewards All Rights Reserved
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
